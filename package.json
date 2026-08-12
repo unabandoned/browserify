@@ -87,7 +87,7 @@
     "has-template-literals": "1.0.1",
     "isstream": "0.1.2",
     "make-generator-function": "2.1.0",
-    "semver": "5.7.2",
+    "semver": "7.8.5",
     "seq": "0.3.5",
     "temp": "=0.9.4",
     "through": "2.3.8"
