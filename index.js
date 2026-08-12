@@ -15,9 +15,9 @@ var inherits = require('inherits');
 var EventEmitter = require('events').EventEmitter;
 var xtend = require('xtend');
 var isArray = Array.isArray;
-var defined = require('defined');
+var defined = require('./lib/vendor/defined');
 var hasOwn = require('hasown');
-var sanitize = require('htmlescape').sanitize;
+var sanitize = require('./lib/vendor/htmlescape').sanitize;
 var shasum = require('shasum-object');
 
 var bresolve = require('browser-resolve');
@@ -30,7 +30,7 @@ inherits(Browserify, EventEmitter);
 
 var fs = require('fs');
 var path = require('path');
-var cachedPathRelative = require('cached-path-relative');
+var cachedPathRelative = require('./lib/vendor/cached-path-relative');
 
 var paths = {
     empty: path.join(__dirname, 'lib/_empty.js')
