@@ -5,7 +5,7 @@ var parseShell = require('shell-quote').parse;
 var insertGlobals = require('insert-module-globals');
 var duplexer = require('duplexer2');
 var subarg = require('subarg');
-var glob = require('glob');
+var glob = require('glob').glob;
 var Readable = require('readable-stream').Readable;
 var xtend = require('xtend');
 
@@ -124,8 +124,7 @@ module.exports = function (args, opts) {
     [].concat(argv.ignore).filter(Boolean)
         .forEach(function (i) {
             b._pending ++;
-            glob(i, function (err, files) {
-                if (err) return b.emit('error', err);
+            glob(i).then(function (files) {
                 if (files.length === 0) {
                   b.ignore(i);
                 }
@@ -133,7 +132,7 @@ module.exports = function (args, opts) {
                   files.forEach(function (file) { b.ignore(file) });
                 }
                 if (--b._pending === 0) b.emit('_ready');
-            });
+            }, function (err) { b.emit('error', err); });
         })
     ;
     
@@ -142,11 +141,10 @@ module.exports = function (args, opts) {
             b.exclude(u);
             
             b._pending ++;
-            glob(u, function (err, files) {
-                if (err) return b.emit('error', err);
+            glob(u).then(function (files) {
                 files.forEach(function (file) { b.exclude(file) });
                 if (--b._pending === 0) b.emit('_ready');
-            });
+            }, function (err) { b.emit('error', err); });
         })
     ;
 
@@ -166,11 +164,11 @@ module.exports = function (args, opts) {
             }
             else if (/\*/.test(x)) {
                 b.external(x);
-                glob(x, function (err, files) {
+                glob(x).then(function (files) {
                     files.forEach(function (file) {
                         add(file, {});
                     });
-                });
+                }, function (err) { b.emit('error', err); });
             }
             else add(x, {});
             
