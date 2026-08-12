@@ -1,7 +1,7 @@
 var browserify = require('../');
 var test = require('./tap-adapter').test;
 var vm = require('vm');
-var through = require('through2');
+var through = require('through2').default;
 
 test('constants', function (t) {
     t.plan(2);

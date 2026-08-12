@@ -2,7 +2,7 @@ var browserify = require('../');
 var vm = require('vm');
 var test = require('./tap-adapter').test;
 var path = require('path');
-var through = require('through2');
+var through = require('through2').default;
 
 var os = require('os');
 var tmpdir = (os.tmpdir || os.tmpDir)();

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var fs = require('fs');
 var JSONStream = require('JSONStream');
-var through = require('through2');
+var through = require('through2').default;
 var mkdirp = require('mkdirp-classic');
 var path = require('path');
 

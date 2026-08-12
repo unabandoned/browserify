@@ -1,4 +1,4 @@
-var through = require('through2');
+var through = require('through2').default;
 var browserify = require('../');
 var test = require('./tap-adapter').test;
 var vm = require('vm');
