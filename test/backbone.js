@@ -5,7 +5,7 @@ var test = require('./tap-adapter').test;
 
 test('backbone', function (t) {
     t.plan(3);
-    var b = browserify();
+    var b = browserify({ ignoreMissing: true });
     b.require('backbone');
     b.bundle(function (err, buf) {
         t.ok(Buffer.isBuffer(buf));

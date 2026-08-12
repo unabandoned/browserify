@@ -79,7 +79,7 @@
   "devDependencies": {
     "@commitlint/cli": "21.2.1",
     "@commitlint/config-conventional": "21.2.0",
-    "backbone": "0.9.10",
+    "backbone": "1.6.1",
     "browser-unpack": "1.4.3",
     "coffee-script": "1.12.7",
     "coffeeify": "3.0.1",
