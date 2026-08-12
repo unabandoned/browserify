@@ -13,7 +13,8 @@ var concat = require('concat-stream');
 
 var inherits = require('inherits');
 var EventEmitter = require('events').EventEmitter;
-var xtend = require('xtend');
+// xtend replacement: shallow-merge sources into a fresh object (drops the xtend dep).
+function xtend () { return Object.assign.apply(null, [{}].concat([].slice.call(arguments))); }
 var isArray = Array.isArray;
 var defined = require('./lib/vendor/defined');
 var hasOwn = require('hasown');

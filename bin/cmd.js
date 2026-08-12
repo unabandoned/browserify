@@ -2,7 +2,6 @@
 var fs = require('fs');
 var JSONStream = require('JSONStream');
 var through = require('through2').default;
-var mkdirp = require('mkdirp-classic');
 var path = require('path');
 
 var b = require('./args')(process.argv.slice(2));
@@ -61,7 +60,7 @@ bundle.on('end', successExit);
 var tmpfile;
 var outfile = b.argv.o || b.argv.outfile;
 if (outfile) {
-    mkdirp.sync(path.dirname(outfile));
+    fs.mkdirSync(path.dirname(outfile), { recursive: true });
     
     // we'll output to a temp file within same filesystem, then atomically overwrite outfile once successful
     tmpfile = outfile + ".tmp-browserify-" + Math.random().toFixed(20).slice(2)

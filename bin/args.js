@@ -7,7 +7,8 @@ var duplexer = require('duplexer2');
 var subarg = require('subarg');
 var glob = require('glob').glob;
 var Readable = require('readable-stream').Readable;
-var xtend = require('xtend');
+// xtend replacement: shallow-merge sources into a fresh object (drops the xtend dep).
+function xtend () { return Object.assign.apply(null, [{}].concat([].slice.call(arguments))); }
 
 module.exports = function (args, opts) {
     var argv = subarg(args, {
