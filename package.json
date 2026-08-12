@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/unabandoned/browserify#readme",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.12"
   },
   "keywords": [
     "browser",
