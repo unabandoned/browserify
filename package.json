@@ -92,6 +92,9 @@
     "temp": "=0.8.3",
     "through": "^2.3.4"
   },
+  "overrides": {
+    "elliptic": "^6.6.1"
+  },
   "author": {
     "name": "James Halliday",
     "email": "mail@substack.net",
