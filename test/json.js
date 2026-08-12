@@ -2,7 +2,7 @@ var browserify = require('../');
 var fs = require('fs');
 var vm = require('vm');
 var semver = require('semver');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('json', function (t) {
     t.plan(2);

@@ -1,7 +1,7 @@
 var browserify = require('../');
 var vm = require('vm');
 var path = require('path');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var through = require('through2');
 
 test('delay for pipelines', function (t) {

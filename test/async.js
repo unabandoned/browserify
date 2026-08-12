@@ -1,7 +1,7 @@
 var browserify = require('../');
 var fs = require('fs');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 var src = fs.readFileSync(__dirname + '/async/src.js','utf8');
 var canAsync = true;

@@ -1,5 +1,5 @@
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('catch pipeline errors with a callback', function (t) {
     t.plan(2);

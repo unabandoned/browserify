@@ -1,4 +1,4 @@
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var spawn = require('child_process').spawn;
 var path = require('path');
 var semver = require('semver');

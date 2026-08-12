@@ -1,4 +1,4 @@
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var vm = require('vm');
 var browserify = require('../');
 

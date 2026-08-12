@@ -1,6 +1,6 @@
 var Seq = require('seq');
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var shasum = require('shasum-object');
 
 test('syntax cache - valid', function (t) {

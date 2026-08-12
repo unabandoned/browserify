@@ -1,7 +1,7 @@
 var browserify = require('../');
 var vm = require('vm');
 var path = require('path');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('entry - relative path', function (t) {
     process.chdir(__dirname);

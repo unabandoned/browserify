@@ -1,4 +1,4 @@
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var browserify = require('../');
 var path = require('path');
 var mainfile = path.join(__dirname, 'ignore_browser_field/main.js');

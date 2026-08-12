@@ -1,6 +1,6 @@
 var browserify = require('../');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 function ensureTransform(t, buf) {
   var srcAsString = (buf||'').toString('utf-8'),

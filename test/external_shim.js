@@ -1,6 +1,6 @@
 var browserify = require('../');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('requiring a shimmed module name from an external bundle', function (t) {
     t.plan(1);

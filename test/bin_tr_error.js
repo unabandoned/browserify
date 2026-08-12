@@ -1,6 +1,6 @@
 var browserify = require('../');
 var spawn = require('child_process').spawn;
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var path = require('path')
 var semver = require('semver');
 

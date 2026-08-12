@@ -1,5 +1,5 @@
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var vm = require('vm');
 
 test('require expose external module', function (t) {
