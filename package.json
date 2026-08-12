@@ -86,7 +86,7 @@
     "has-object-spread": "1.0.0",
     "has-template-literals": "1.0.1",
     "isstream": "0.1.2",
-    "make-generator-function": "1.1.1",
+    "make-generator-function": "2.1.0",
     "semver": "5.7.2",
     "seq": "0.3.5",
     "temp": "=0.9.4",
