@@ -82,7 +82,7 @@
     "backbone": "0.9.10",
     "browser-unpack": "1.4.3",
     "coffee-script": "1.12.7",
-    "coffeeify": "1.2.0",
+    "coffeeify": "3.0.1",
     "has-object-spread": "1.0.0",
     "has-template-literals": "1.0.1",
     "isstream": "0.1.2",
