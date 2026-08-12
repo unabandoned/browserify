@@ -1,5 +1,5 @@
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var util = require('util');
 var xtend = require('xtend');
 var vm = require('vm');

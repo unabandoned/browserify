@@ -1,6 +1,6 @@
 var browserify = require('../');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('optionally preserves symlinks', { skip: process.platform === 'win32' }, function (t) {
     t.plan(2);

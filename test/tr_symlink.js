@@ -3,7 +3,7 @@
 
 var browserify = require('../');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var through = require('through2');
 
 test('transform symlink', { skip: process.platform === 'win32' }, function (t) {

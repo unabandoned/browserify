@@ -1,5 +1,5 @@
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('identical content gets deduped and the row gets an implicit dep on the original source', function (t) {
   t.plan(1)

@@ -1,5 +1,5 @@
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 var pubdir = __dirname;
 var dir = pubdir + '/bundle-bundle-external';

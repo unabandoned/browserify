@@ -1,6 +1,6 @@
 var browserify = require('../');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('relative dedupe', function (t) {
     var expected = [ 'a a', 'a b', 'b a', 'b b' ];

@@ -1,5 +1,5 @@
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('identical content gets deduped and the row gets a "nomap" flag set when sourcemaps are turned on', function (t) {
   t.plan(4)

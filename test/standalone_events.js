@@ -1,5 +1,5 @@
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('standalone bundle close event', {timeout: 1000}, function (t) {
     t.plan(1);

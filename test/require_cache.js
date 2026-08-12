@@ -1,6 +1,6 @@
 var vm = require('vm');
 var browserify = require('../');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('cached require results', function (t) {
     t.plan(1);

@@ -1,7 +1,7 @@
 var browserify = require('../');
 var vm = require('vm');
 var backbone = require('backbone');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('backbone', function (t) {
     t.plan(3);

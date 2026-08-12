@@ -1,6 +1,6 @@
 var browserify = require('../');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 test('reset', function (t) {
     t.plan(4);

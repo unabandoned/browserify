@@ -1,7 +1,7 @@
 var browserify = require('../');
 var path = require('path');
 var vm = require('vm');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 var expected = [
     readpkg('pkg_event'),

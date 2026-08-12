@@ -1,0 +1,8 @@
+name: release-please
+on:
+  push:
+    branches: [master]
+jobs:
+  release-please:
+    uses: unabandoned/.github/.github/workflows/reusable-release-please.yml@main
+    secrets: inherit

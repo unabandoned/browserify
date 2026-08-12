@@ -1,4 +1,4 @@
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var fromArgs = require('../bin/args.js');
 var path = require('path');
 var vm = require('vm');

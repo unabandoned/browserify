@@ -2,7 +2,7 @@ var browserify = require('../');
 var vm = require('vm');
 var fs = require('fs');
 var path = require('path');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 var prelude = fs.readFileSync(path.join(__dirname, 'multi_bundle', '_prelude.js'), 'utf8');
 
 test('unique require', function (t) {

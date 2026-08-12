@@ -1,7 +1,7 @@
 var browserify = require('../');
 var vm = require('vm');
 var through = require('through2');
-var test = require('tap').test;
+var test = require('./tap-adapter').test;
 
 var fs = require('fs');
 var sources = {

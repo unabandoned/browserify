@@ -1,0 +1,6 @@
+name: commitlint
+on:
+  pull_request:
+jobs:
+  commitlint:
+    uses: unabandoned/.github/.github/workflows/reusable-commitlint.yml@main
