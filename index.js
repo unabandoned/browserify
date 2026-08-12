@@ -8,7 +8,7 @@ var syntaxError = require('syntax-error');
 var builtins = require('./lib/builtins.js');
 
 var splicer = require('labeled-stream-splicer');
-var through = require('through2');
+var through = require('through2').default;
 var concat = require('concat-stream');
 
 var inherits = require('inherits');

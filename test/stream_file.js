@@ -2,7 +2,7 @@ var browserify = require('../');
 var vm = require('vm');
 var test = require('./tap-adapter').test;
 var fs = require('fs');
-var through = require('through2');
+var through = require('through2').default;
 var path = require('path');
 
 test('stream file', function (t) {

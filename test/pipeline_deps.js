@@ -1,7 +1,7 @@
 var browserify = require('../');
 var vm = require('vm');
 var test = require('./tap-adapter').test;
-var through = require('through2');
+var through = require('through2').default;
 
 test('deps pipeline', function (t) {
     t.plan(1);
