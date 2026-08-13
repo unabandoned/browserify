@@ -11,4 +11,4 @@ jobs:
       security-events: write
       id-token: write
       contents: read
-    uses: unabandoned/.github/.github/workflows/reusable-scorecard.yml@5218bc51c951148887c6a7322f553e50ad67821b # main
+    uses: unabandoned/.github/.github/workflows/reusable-scorecard.yml@6be3bc531cad43d59a76021ac2fd338892b3a1fe # main
