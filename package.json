@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "assert": "^2.0.0",
-    "browser-pack": "^6.0.1",
+    "browser-pack": "npm:@unabandoned/browser-pack@^6",
     "browser-resolve": "^2.0.0",
     "browserify-zlib": "~0.2.0",
     "buffer": "npm:@unabandoned/buffer@^6",
@@ -47,7 +47,7 @@
     "insert-module-globals": "^7.2.1",
     "JSONStream": "^1.0.3",
     "labeled-stream-splicer": "^2.0.0",
-    "module-deps": "^6.2.3",
+    "module-deps": "npm:@unabandoned/module-deps@^6",
     "os-browserify": "~0.3.0",
     "parents": "^1.0.1",
     "path-browserify": "npm:@unabandoned/path-browserify@^1",
