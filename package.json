@@ -78,6 +78,7 @@
     "browser-unpack": "1.4.3",
     "coffee-script": "1.12.7",
     "coffeeify": "3.0.1",
+    "defined": "^1.0.0",
     "has-object-spread": "1.0.0",
     "has-template-literals": "1.0.1",
     "isstream": "0.1.2",
