@@ -1,0 +1,20 @@
+schema: 1
+
+package: "@unabandoned/browserify"
+
+upstream:
+  repo: browserify/browserify
+  reason: "unmaintained upstream — the bundler sits idle while its large dependency tree ages"
+
+summary: >-
+  Bundler that lets you require() Node-style modules in the browser by walking
+  the dependency graph and packing it into a single browser bundle.
+
+why-forked: >-
+  The hub of the browserify ecosystem went unmaintained while its deep
+  dependency tree aged; forked so Renovate keeps the whole tree current for the
+  consumers that still bundle with it.
+
+status: active
+
+tags: [browser, bundler, require, commonjs, browserify]
