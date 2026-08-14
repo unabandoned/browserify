@@ -75,7 +75,7 @@
     "@commitlint/cli": "21.2.1",
     "@commitlint/config-conventional": "21.2.0",
     "backbone": "1.6.1",
-    "browser-unpack": "npm:@unabandoned/browser-unpack@^1",
+    "browser-unpack": "npm:@unabandoned/browser-unpack@1.4.4",
     "coffee-script": "1.12.7",
     "coffeeify": "3.0.1",
     "defined": "1.0.1",
