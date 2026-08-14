@@ -1,5 +1,19 @@
 # Changelog
 
+## [17.0.4](https://github.com/unabandoned/browserify/compare/browserify-v17.0.3...browserify-v17.0.4) (2026-08-14)
+
+
+### Bug Fixes
+
+* repoint five browserify-family deps at their [@unabandoned](https://github.com/unabandoned) forks ([#42](https://github.com/unabandoned/browserify/issues/42)) ([86080a7](https://github.com/unabandoned/browserify/commit/86080a7af0108578867bf499b13a82166b97a9b7))
+
+
+### Dependencies & maintenance
+
+* **deps:** pin dependency browser-unpack to 1.4.4 ([#43](https://github.com/unabandoned/browserify/issues/43)) ([cc47237](https://github.com/unabandoned/browserify/commit/cc472371c486c3b488ccc8db02ee48bd892d4796))
+* **deps:** update unabandoned/.github digest to 65e1d30 ([#41](https://github.com/unabandoned/browserify/issues/41)) ([64e33d4](https://github.com/unabandoned/browserify/commit/64e33d481b94e61ffc2296f07a6e4c2775a1bb66))
+* **deps:** update unabandoned/.github digest to 6be3bc5 ([#39](https://github.com/unabandoned/browserify/issues/39)) ([5555fa6](https://github.com/unabandoned/browserify/commit/5555fa6167412a549bbbf2981dcabc2929b94eab))
+
 ## [17.0.3](https://github.com/unabandoned/browserify/compare/browserify-v17.0.2...browserify-v17.0.3) (2026-08-13)
 
 
