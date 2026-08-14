@@ -1,5 +1,5 @@
 try {
-  var Backbone = require('backbone');
+  var Backbone = require('minimist');
   throw new Error('module included');
 } catch (e) {
   if (e.message === 'module included') {

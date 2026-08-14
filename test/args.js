@@ -18,7 +18,7 @@ test('bundle from an arguments array', function (t) {
 test('external flag for node modules', function(t) {
     t.plan(2);
     
-    var b = fromArgs([ __dirname + '/external_args/main.js', '-x', 'backbone' ]);
+    var b = fromArgs([ __dirname + '/external_args/main.js', '-x', 'minimist' ]);
     b.bundle(function (err, src) {
         t.ifError(err);
         vm.runInNewContext(src, {t: t});

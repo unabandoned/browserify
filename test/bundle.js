@@ -1,10 +1,11 @@
 var browserify = require('../');
 var vm = require('vm');
+var path = require('path');
 var test = require('./tap-adapter').test;
 
 test('bundle', function (t) {
     var b = browserify();
-    b.require('seq');
+    b.require(path.join(__dirname, 'fixtures', 'async-seq.js'), { expose: 'seq' });
     b.bundle(function (err, src) {
         t.plan(3);
         

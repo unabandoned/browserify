@@ -5,9 +5,7 @@ var path = require('path');
 var fs = require('fs');
 var vm = require('vm');
 
-var temp = require('temp');
-temp.track();
-var tmpdir = temp.mkdirSync({prefix: 'browserify-test'});
+var tmpdir = require('fs').mkdtempSync(require('path').join(require('os').tmpdir(), 'browserify-test'));
 var pubdir = path.join(tmpdir, 'public');
 
 fs.mkdirSync(pubdir);
