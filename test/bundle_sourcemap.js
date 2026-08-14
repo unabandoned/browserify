@@ -1,11 +1,12 @@
 var browserify = require('../');
+var path = require('path');
 var test = require('./tap-adapter').test;
 
 test('bundle in debug mode', function (t) {
     t.plan(3);
     
     var b = browserify({ debug: true });
-    b.require('seq');
+    b.require(path.join(__dirname, 'fixtures', 'async-seq.js'), { expose: 'seq' });
     b.bundle(function (err, buf) {
         var src = buf.toString('utf8');
         var secondtolastLine = src.split('\n').slice(-2);
@@ -20,7 +21,7 @@ test('bundle in non debug mode', function (t) {
     t.plan(3);
         
     var b = browserify();
-    b.require('seq');
+    b.require(path.join(__dirname, 'fixtures', 'async-seq.js'), { expose: 'seq' });
     b.bundle(function (err, buf) {
         var src = buf.toString('utf8');
         var secondtolastLine = src.split('\n').slice(-2);

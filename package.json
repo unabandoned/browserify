@@ -71,18 +71,13 @@
   "devDependencies": {
     "@commitlint/cli": "21.2.1",
     "@commitlint/config-conventional": "21.2.0",
-    "backbone": "1.6.1",
     "browser-unpack": "npm:@unabandoned/browser-unpack@1.4.4",
-    "coffee-script": "1.12.7",
-    "coffeeify": "3.0.1",
     "defined": "1.0.1",
     "has-object-spread": "1.0.0",
     "has-template-literals": "1.0.1",
     "isstream": "0.1.2",
     "make-generator-function": "2.1.0",
     "semver": "7.8.5",
-    "seq": "0.3.5",
-    "temp": "=0.9.4",
     "through": "2.3.8"
   },
   "author": {

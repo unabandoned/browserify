@@ -6,9 +6,7 @@ var concat = require('concat-stream');
 var vm = require('vm');
 var fs = require('fs');
 var through = require('through2').default;
-var temp = require('temp');
-temp.track();
-var tmpdir = temp.mkdirSync({prefix: 'browserify-test'});
+var tmpdir = require('fs').mkdtempSync(require('path').join(require('os').tmpdir(), 'browserify-test'));
 
 test('bare', function (t) {
     t.plan(4);

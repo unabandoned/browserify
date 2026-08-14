@@ -1,4 +1,3 @@
-var Seq = require('seq');
 var browserify = require('../');
 var test = require('./tap-adapter').test;
 var shasum = require('shasum-object');
@@ -15,17 +14,15 @@ test('syntax cache - valid', function (t) {
         expectedCache[cacheKey] = true;
     });
     
-    Seq()
-        .seq(function() { b.bundle(this); })
-        .seq(function() {
+    b.bundle(function() {
+        t.deepEqual(b._syntaxCache, expectedCache);
+        b._syntaxCache[cacheKey] = expectedCache[cacheKey] = 'beep';
+        b.bundle(function(err, src) {
+            // if the cache worked, the "cacheKey"
+            // should not be reset to "true"
             t.deepEqual(b._syntaxCache, expectedCache);
-            b._syntaxCache[cacheKey] = expectedCache[cacheKey] = 'beep';
-            b.bundle(function(err, src) {
-                // if the cache worked, the "cacheKey"
-                // should not be reset to "true"
-                t.deepEqual(b._syntaxCache, expectedCache);
-            });
         });
+    });
 });
 
 test('syntax cache - skip invalid', function (t) {
@@ -33,15 +30,13 @@ test('syntax cache - skip invalid', function (t) {
     
     var b = browserify(__dirname + '/syntax_cache/invalid.js');
     
-    Seq()
-        .seq(function() { b.bundle(this); })
-        .catch(function(lastErr) {
+    b.bundle(function(lastErr) {
+        t.deepEqual(b._syntaxCache, {});
+        t.similar(String(lastErr), /ParseError/);
+        b.bundle(function(err, src) {
             t.deepEqual(b._syntaxCache, {});
-            t.similar(String(lastErr), /ParseError/);
-            b.bundle(function(err, src) {
-                t.deepEqual(b._syntaxCache, {});
-                t.similar(String(err), /ParseError/);
-                t.notEqual(lastErr, err, 'errors should be unique');
-            });
+            t.similar(String(err), /ParseError/);
+            t.notEqual(lastErr, err, 'errors should be unique');
         });
+    });
 });
