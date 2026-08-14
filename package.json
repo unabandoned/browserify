@@ -30,7 +30,7 @@
     "assert": "^2.0.0",
     "browser-pack": "npm:@unabandoned/browser-pack@^6",
     "browser-resolve": "npm:@unabandoned/browser-resolve@^2",
-    "browserify-zlib": "npm:@unabandoned/browserify-zlib@^1",
+    "browserify-zlib": "npm:@unabandoned/browserify-zlib@^2",
     "buffer": "npm:@unabandoned/buffer@^6",
     "console-browserify": "^1.1.0",
     "constants-browserify": "~1.0.0",
