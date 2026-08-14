@@ -31,6 +31,11 @@ test('*-browserify libs from node_modules/', { skip: semver.lt(process.version, 
             ArrayBuffer: ArrayBuffer,
             Uint8Array: Uint8Array,
             DataView: DataView,
+            // readable-stream >= 4 (which the `stream`/`readable-stream` builtins
+            // now resolve to) uses the global AbortController/AbortSignal that
+            // modern browsers provide; expose them to the sandboxed bundle.
+            AbortController: AbortController,
+            AbortSignal: AbortSignal,
             beep : function (c) {
                 t.equal(typeof c.createHash, 'function');
             },

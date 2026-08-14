@@ -31,6 +31,11 @@ test('crypto --insertGlobals', { skip: semver.lt(process.version, 'v4.0.0') }, f
             ArrayBuffer: ArrayBuffer,
             Uint8Array: Uint8Array,
             DataView: DataView,
+            // readable-stream >= 4 (which the `stream`/`readable-stream` builtins
+            // now resolve to) uses the global AbortController/AbortSignal that
+            // modern browsers provide; expose them to the sandboxed bundle.
+            AbortController: AbortController,
+            AbortSignal: AbortSignal,
             beep : function (c) {
                 t.equal(typeof c.createHash, 'function');
             },
