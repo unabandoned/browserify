@@ -7,7 +7,7 @@ jobs:
   ci:
     permissions:
       contents: read
-    uses: unabandoned/.github/.github/workflows/reusable-ci.yml@65e1d30043e2fec1a49ebfba36d771d2acce8e2c # main
+    uses: unabandoned/.github/.github/workflows/reusable-ci.yml@9f2cc43e37cb37150eff4c63664bd009c8ae6342 # main
     with:
       node-versions: '[22, 24]'
       has-build: false
