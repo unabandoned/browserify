@@ -1,6 +1,6 @@
 var test = require('./tap-adapter').test;
 var spawn = require('child_process').spawn;
-var concat = require('concat-stream');
+var concat = require('./lib/concat');
 var path = require('path');
 var fs = require('fs');
 var vm = require('vm');

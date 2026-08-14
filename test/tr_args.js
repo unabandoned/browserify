@@ -1,7 +1,7 @@
 var test = require('./tap-adapter').test;
 var spawn = require('child_process').spawn;
 var path = require('path');
-var concat = require('concat-stream');
+var concat = require('./lib/concat');
 var vm = require('vm');
 
 test('transform arguments', function (t) {
