@@ -1,5 +1,29 @@
 # Changelog
 
+## [17.1.0](https://github.com/unabandoned/browserify/compare/browserify-v17.0.4...browserify-v17.1.0) (2026-08-14)
+
+
+### Features
+
+* repoint the browser-injected polyfill tier onto [@unabandoned](https://github.com/unabandoned) forks ([#52](https://github.com/unabandoned/browserify/issues/52)) ([856b171](https://github.com/unabandoned/browserify/commit/856b171bdad1e51ea4e2d0478cd7fee9c15932b8))
+
+
+### Bug Fixes
+
+* drop abandoned concat-stream, duplexer2, parents, and subarg ([#44](https://github.com/unabandoned/browserify/issues/44)) ([03c4e17](https://github.com/unabandoned/browserify/commit/03c4e1780e229e6391bec9b429e5f71c233da232))
+* drop abandoned JSONStream from the browserify CLI ([#49](https://github.com/unabandoned/browserify/issues/49)) ([481b35a](https://github.com/unabandoned/browserify/commit/481b35ae0cdde5951ace1cf4372cbc8b400a338e))
+* drop abandoned read-only-stream from the pipeline ([#51](https://github.com/unabandoned/browserify/issues/51)) ([c6ad982](https://github.com/unabandoned/browserify/commit/c6ad982ea7d6d0a7087fe79beab647a782721528))
+
+
+### Dependencies & maintenance
+
+* add .unabandoned.yml dashboard metadata ([#53](https://github.com/unabandoned/browserify/issues/53)) ([5b8f09b](https://github.com/unabandoned/browserify/commit/5b8f09bc5af64c8d4625c7543bd6f5b991b1981e))
+* **deps:** update dependency browser-unpack to v1.4.6 ([#47](https://github.com/unabandoned/browserify/issues/47)) ([83a65e8](https://github.com/unabandoned/browserify/commit/83a65e8b20eeaf3de15d849fc4b0546c1e034a8a))
+* **deps:** update unabandoned/.github digest to 88ce617 ([#54](https://github.com/unabandoned/browserify/issues/54)) ([78d8427](https://github.com/unabandoned/browserify/commit/78d84276d2ae035e68479e9d8b43a78b2d6815e4))
+* **deps:** update unabandoned/.github digest to 9f2cc43 ([#50](https://github.com/unabandoned/browserify/issues/50)) ([31ab81e](https://github.com/unabandoned/browserify/commit/31ab81e772a75ea55de957f0768af89f75b27fa7))
+* drop abandoned dev fixtures (backbone, seq, temp, coffeeify) ([#46](https://github.com/unabandoned/browserify/issues/46)) ([a3cfad6](https://github.com/unabandoned/browserify/commit/a3cfad6885b002be37fabb834516bc95a8cdfcc6))
+* stop tests from requiring the abandoned concat-stream ([#48](https://github.com/unabandoned/browserify/issues/48)) ([995dd5a](https://github.com/unabandoned/browserify/commit/995dd5a908cc89d264eb57b25ec6f5ccc0bcb1be))
+
 ## [17.0.4](https://github.com/unabandoned/browserify/compare/browserify-v17.0.3...browserify-v17.0.4) (2026-08-14)
 
 
