@@ -3,7 +3,7 @@ var spawn = require('child_process').spawn;
 var path = require('path');
 var fs = require('fs');
 var vm = require('vm');
-var concat = require('concat-stream');
+var concat = require('./lib/concat');
 var semver = require('semver');
 
 var tmpdir = require('fs').mkdtempSync(require('path').join(require('os').tmpdir(), 'browserify-test'));
