@@ -43,7 +43,7 @@
     "https-browserify": "^1.0.0",
     "inherits": "~2.0.1",
     "insert-module-globals": "npm:@unabandoned/insert-module-globals@^7",
-    "labeled-stream-splicer": "^2.0.0",
+    "labeled-stream-splicer": "npm:@unabandoned/labeled-stream-splicer@^2",
     "minimist": "^1.2.8",
     "module-deps": "npm:@unabandoned/module-deps@^6",
     "os-browserify": "~0.3.0",
