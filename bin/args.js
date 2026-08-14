@@ -3,8 +3,8 @@ var path = require('path');
 var spawn = require('child_process').spawn;
 var parseShell = require('shell-quote').parse;
 var insertGlobals = require('insert-module-globals');
-var duplexer = require('duplexer2');
-var subarg = require('subarg');
+var Duplex = require('stream').Duplex;
+var subarg = require('../lib/vendor/subarg');
 var glob = require('glob').glob;
 var Readable = require('readable-stream').Readable;
 // xtend replacement: shallow-merge sources into a fresh object (drops the xtend dep).
@@ -232,7 +232,7 @@ module.exports = function (args, opts) {
                     ].join('\n'));
                     process.exit(1);
                 });
-                return duplexer(ps.stdin, ps.stdout);
+                return Duplex.from({ writable: ps.stdin, readable: ps.stdout });
             });
         })
     ;

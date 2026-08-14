@@ -9,7 +9,19 @@ var builtins = require('./lib/builtins.js');
 
 var splicer = require('labeled-stream-splicer');
 var through = require('through2').default;
-var concat = require('concat-stream');
+// concat-stream replacement: collect a piped stream into one Buffer, then call
+// back with it (the only form browserify uses). Drops the abandoned dependency.
+var Writable = require('stream').Writable;
+function concat(cb) {
+    var chunks = [];
+    return new Writable({
+        write: function (chunk, enc, next) {
+            chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
+            next();
+        },
+        final: function (next) { cb(Buffer.concat(chunks)); next(); }
+    });
+}
 
 var inherits = require('inherits');
 var EventEmitter = require('events').EventEmitter;
