@@ -36,7 +36,7 @@ var shasum = require('shasum-object');
 var bresolve = require('browser-resolve');
 var resolve = require('resolve');
 
-var readonly = require('read-only-stream');
+var readonly = require('./lib/vendor/read-only-stream');
 
 module.exports = Browserify;
 inherits(Browserify, EventEmitter);
