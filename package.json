@@ -27,7 +27,6 @@
     "javascript"
   ],
   "dependencies": {
-    "JSONStream": "^1.0.3",
     "assert": "^2.0.0",
     "browser-pack": "npm:@unabandoned/browser-pack@^6",
     "browser-resolve": "npm:@unabandoned/browser-resolve@^2",
