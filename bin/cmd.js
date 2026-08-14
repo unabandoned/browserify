@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var fs = require('fs');
-var JSONStream = require('JSONStream');
+var jsonArrayStream = require('../lib/vendor/json-array-stream');
 var through = require('through2').default;
 var path = require('path');
 
@@ -34,7 +34,7 @@ if (b.argv.pack) {
 }
 
 if (b.argv.deps) {
-    var stringify = JSONStream.stringify();
+    var stringify = jsonArrayStream();
     stringify.pipe(process.stdout);
     b.pipeline.get('deps').push(through.obj(
         function (row, enc, next) { stringify.write(row); next() },
