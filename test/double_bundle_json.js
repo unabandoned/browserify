@@ -2,7 +2,6 @@ var browserify = require('../');
 var vm = require('vm');
 var test = require('./tap-adapter').test;
 var through = require('through2').default;
-var xtend = require('xtend');
 
 test('double bundle json', function (t) {
     t.plan(6);
@@ -19,7 +18,7 @@ test('double bundle json', function (t) {
     b.pipeline.get('deps').push(through.obj(function(row, enc, next) {
         cache[row.file] = {
             source: row.source,
-            deps: xtend(row.deps)
+            deps: Object.assign({}, row.deps)
         };
         this.push(row);
         next();
