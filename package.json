@@ -34,7 +34,7 @@
     "buffer": "npm:@unabandoned/buffer@^6",
     "console-browserify": "^1.1.0",
     "constants-browserify": "~1.0.0",
-    "crypto-browserify": "^3.0.0",
+    "crypto-browserify": "npm:@unabandoned/crypto-browserify@^3",
     "deps-sort": "npm:@unabandoned/deps-sort@^2",
     "domain-browser": "^5.0.0",
     "events": "npm:@unabandoned/events@^3",
