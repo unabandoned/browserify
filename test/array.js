@@ -25,7 +25,10 @@ test('array require', function (t) {
     t.plan(3);
     
     var b = browserify();
-    var files = [ 'defined', 'subarg' ];
+    var files = [
+        'defined',
+        { file: require.resolve('../lib/vendor/subarg'), expose: 'subarg' }
+    ];
     b.require(files);
     b.bundle(function (err, src) {
         var c = {};
@@ -43,7 +46,7 @@ test('array require opts', function (t) {
     var b = browserify();
     var files = [
         { file: require.resolve('defined'), expose: 'abc' },
-        { file: require.resolve('subarg'), expose: 'def' }
+        { file: require.resolve('../lib/vendor/subarg'), expose: 'def' }
     ];
     b.require(files);
     b.bundle(function (err, src) {
