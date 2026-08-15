@@ -56,7 +56,7 @@
     "shasum-object": "^1.0.0",
     "shell-quote": "^1.6.1",
     "stream-http": "npm:@unabandoned/stream-http@^3",
-    "string_decoder": "^1.1.1",
+    "string_decoder": "npm:@unabandoned/string_decoder@^1",
     "syntax-error": "npm:@unabandoned/syntax-error@^1",
     "through2": "^5.0.0",
     "tty-browserify": "0.0.1",
