@@ -1,5 +1,16 @@
 # Changelog
 
+## [17.1.1](https://github.com/unabandoned/browserify/compare/browserify-v17.1.0...browserify-v17.1.1) (2026-08-15)
+
+
+### Dependencies & maintenance
+
+* **deps:** repoint crypto-browserify to the [@unabandoned](https://github.com/unabandoned) fork ([#60](https://github.com/unabandoned/browserify/issues/60)) ([11d8a6e](https://github.com/unabandoned/browserify/commit/11d8a6e7416aad0bfc3f22595ab76b198b5d8b61))
+* **deps:** repoint labeled-stream-splicer to the [@unabandoned](https://github.com/unabandoned) fork ([#58](https://github.com/unabandoned/browserify/issues/58)) ([8a6d51a](https://github.com/unabandoned/browserify/commit/8a6d51aa28d5bbeaf642842ae95353d70ad05c91))
+* **deps:** repoint string_decoder to the [@unabandoned](https://github.com/unabandoned) fork ([#59](https://github.com/unabandoned/browserify/issues/59)) ([8748f1a](https://github.com/unabandoned/browserify/commit/8748f1a905769986374d21b236ce70a0405f5481))
+* pin reusable workflows to the @unabandoned/.github v1.0.0 release ([#56](https://github.com/unabandoned/browserify/issues/56)) ([cc575f5](https://github.com/unabandoned/browserify/commit/cc575f50392321d8ec58c02e8cf309bbbbd167b3))
+* vendor stream-browserify and timers-browserify to drop the abandoned deps ([#55](https://github.com/unabandoned/browserify/issues/55)) ([ca6c266](https://github.com/unabandoned/browserify/commit/ca6c266e9e22d2926a55c73af33441b6754f9582))
+
 ## [17.1.0](https://github.com/unabandoned/browserify/compare/browserify-v17.0.4...browserify-v17.1.0) (2026-08-14)
 
 
