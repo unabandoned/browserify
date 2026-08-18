@@ -1,5 +1,13 @@
 # Changelog
 
+## [17.1.3](https://github.com/unabandoned/browserify/compare/browserify-v17.1.2...browserify-v17.1.3) (2026-08-18)
+
+
+### Dependencies & maintenance
+
+* **deps:** update commitlint monorepo to v21.2.2 ([#63](https://github.com/unabandoned/browserify/issues/63)) ([a11e642](https://github.com/unabandoned/browserify/commit/a11e642685170f78a16c3fea265769f71e735090))
+* **deps:** update unabandoned/.github action to v1.0.1 ([#65](https://github.com/unabandoned/browserify/issues/65)) ([6f0368a](https://github.com/unabandoned/browserify/commit/6f0368a0f2fae9a8a0874d24bd88b98e24982c9a))
+
 ## [17.1.2](https://github.com/unabandoned/browserify/compare/browserify-v17.1.1...browserify-v17.1.2) (2026-08-15)
 
 
