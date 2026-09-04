@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.1.4](https://github.com/unabandoned/browserify/compare/browserify-v17.1.3...browserify-v17.1.4) (2026-09-04)
+
+
+### Dependencies & maintenance
+
+* **deps:** update dependency browser-unpack to v1.4.8 ([#68](https://github.com/unabandoned/browserify/issues/68)) ([12606d6](https://github.com/unabandoned/browserify/commit/12606d6cb2e0744eae8455f3044ca6e0f3ad9e45))
+
 ## [17.1.3](https://github.com/unabandoned/browserify/compare/browserify-v17.1.2...browserify-v17.1.3) (2026-08-28)
 
 
