@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.3.0](https://github.com/unabandoned/browserify/compare/browserify-v17.2.0...browserify-v17.3.0) (2026-09-22)
+
+
+### Features
+
+* vendor shasum-object ([#75](https://github.com/unabandoned/browserify/issues/75)) ([ddf6929](https://github.com/unabandoned/browserify/commit/ddf69298da53dc5229b2da3cb82544ec56507d86))
+
 ## [17.2.0](https://github.com/unabandoned/browserify/compare/browserify-v17.1.3...browserify-v17.2.0) (2026-09-22)
 
 
