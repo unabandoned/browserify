@@ -31,7 +31,7 @@ var isArray = Array.isArray;
 var defined = require('./lib/vendor/defined');
 var hasOwn = require('hasown');
 var sanitize = require('./lib/vendor/htmlescape').sanitize;
-var shasum = require('shasum-object');
+var shasum = require('./lib/vendor/shasum-object');
 
 var bresolve = require('browser-resolve');
 var resolve = require('resolve');
