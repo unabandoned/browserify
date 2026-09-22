@@ -5,7 +5,7 @@ var path = require('path');
 var concat = require('./lib/concat');
 var vm = require('vm');
 var fs = require('fs');
-var through = require('through2').default;
+var through = require('../through');
 var tmpdir = require('fs').mkdtempSync(require('path').join(require('os').tmpdir(), 'browserify-test'));
 
 test('bare', function (t) {

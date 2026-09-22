@@ -1,7 +1,7 @@
 var browserify = require('../');
 var vm = require('vm');
 var test = require('./tap-adapter').test;
-var through = require('through2').default;
+var through = require('../through');
 
 test('global transform precedence', function (t) {
     t.plan(1);

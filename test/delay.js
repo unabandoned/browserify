@@ -2,7 +2,7 @@ var browserify = require('../');
 var vm = require('vm');
 var path = require('path');
 var test = require('./tap-adapter').test;
-var through = require('through2').default;
+var through = require('../through');
 
 test('delay for pipelines', function (t) {
     t.plan(3);

@@ -58,7 +58,6 @@
     "stream-http": "npm:@unabandoned/stream-http@^3",
     "string_decoder": "npm:@unabandoned/string_decoder@^1",
     "syntax-error": "npm:@unabandoned/syntax-error@^1",
-    "through2": "^5.0.0",
     "tty-browserify": "0.0.1",
     "url": "npm:@unabandoned/url@^0",
     "util": "npm:@unabandoned/util@^0",
