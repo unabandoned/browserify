@@ -1,5 +1,21 @@
 # Changelog
 
+## [17.2.0](https://github.com/unabandoned/browserify/compare/browserify-v17.1.3...browserify-v17.2.0) (2026-09-22)
+
+
+### Features
+
+* point the assert builtin at @unabandoned/assert ([#74](https://github.com/unabandoned/browserify/issues/74)) ([3791f57](https://github.com/unabandoned/browserify/commit/3791f576e3707c8e57b0033c00de294a0853ec15))
+* replace through2 with the slice of it this package uses ([#73](https://github.com/unabandoned/browserify/issues/73)) ([1111049](https://github.com/unabandoned/browserify/commit/1111049254357f6188c8b7140879c8b7fa0190b2))
+
+
+### Dependencies & maintenance
+
+* **deps:** update dependency browser-unpack to v1.4.8 ([#68](https://github.com/unabandoned/browserify/issues/68)) ([12606d6](https://github.com/unabandoned/browserify/commit/12606d6cb2e0744eae8455f3044ca6e0f3ad9e45))
+* **deps:** update unabandoned/.github action to v1.0.4 ([#70](https://github.com/unabandoned/browserify/issues/70)) ([3f9572b](https://github.com/unabandoned/browserify/commit/3f9572b72e7f959ca762296910c3f4e8ca852c72))
+* **deps:** update unabandoned/.github action to v1.0.5 ([#71](https://github.com/unabandoned/browserify/issues/71)) ([d5d3394](https://github.com/unabandoned/browserify/commit/d5d33943b0b12879a34982b98e2c69defb4905aa))
+* **deps:** update unabandoned/.github action to v1.1.0 ([#72](https://github.com/unabandoned/browserify/issues/72)) ([117b3cd](https://github.com/unabandoned/browserify/commit/117b3cd4457771292c2a7e21eb1c7a58bea69ade))
+
 ## [17.1.3](https://github.com/unabandoned/browserify/compare/browserify-v17.1.2...browserify-v17.1.3) (2026-08-28)
 
 
