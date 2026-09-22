@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var fs = require('fs');
 var jsonArrayStream = require('../lib/vendor/json-array-stream');
-var through = require('through2').default;
+var through = require('../through');
 var path = require('path');
 
 var b = require('./args')(process.argv.slice(2));
