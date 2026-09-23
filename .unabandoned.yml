@@ -6,6 +6,35 @@ upstream:
   repo: browserify/browserify
   reason: "unmaintained upstream — the bundler sits idle while its large dependency tree ages"
 
+  # Upstream commits looked at and deliberately not pulled, so the monthly
+  # drift report stops re-reporting them and a genuinely new commit stands out.
+  reviewed:
+    - sha: b6bdbed6
+      decision: declined
+      note: >-
+        adds ljharb's workflows, including the two pull_request_target ones
+        removed elsewhere in this org ahead of GitHub's 2026-11-02 policy;
+        our CI is the shared reusable workflows
+    - sha: a9966e4f
+      decision: declined
+      note: >-
+        pins stack-utils and trivial-deferred for ES5 test compat; this fork is
+        engines >=22.12 on a [22, 24] matrix and carries neither devDependency
+    - sha: a341a1c8
+      decision: declined
+      note: "sets audit-level in upstream's .npmrc; ours carries package-lock=false only"
+    - sha: 72ce2152
+      decision: declined
+      note: "edits upstream's node-pretest.yml, a workflow this fork does not have"
+    - sha: 11980d43
+      decision: declined
+      note: >-
+        adds .nvmrc; the engines field and the CI matrix already state the
+        supported Node versions
+    - sha: 33ba29b8
+      decision: declined
+      note: "merge commit for the five above"
+
 summary: >-
   Bundler that lets you require() Node-style modules in the browser by walking
   the dependency graph and packing it into a single browser bundle.
