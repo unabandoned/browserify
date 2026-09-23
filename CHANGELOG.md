@@ -1,5 +1,13 @@
 # Changelog
 
+## [17.3.1](https://github.com/unabandoned/browserify/compare/browserify-v17.3.0...browserify-v17.3.1) (2026-09-23)
+
+
+### Bug Fixes
+
+* require the vendored through and shasum, not the removed packages ([#78](https://github.com/unabandoned/browserify/issues/78)) ([1ffefd1](https://github.com/unabandoned/browserify/commit/1ffefd17540fa7e49940d6c527cf0cf0a24b85c8))
+* stop dev-only commits from cutting releases ([#81](https://github.com/unabandoned/browserify/issues/81)) ([60869f7](https://github.com/unabandoned/browserify/commit/60869f7c234019bfd5493ee42d841b8a7c8b7bd1))
+
 ## [17.3.0](https://github.com/unabandoned/browserify/compare/browserify-v17.2.0...browserify-v17.3.0) (2026-09-22)
 
 
