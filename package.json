@@ -1,6 +1,6 @@
 {
   "name": "@unabandoned/browserify",
-  "version": "17.3.0",
+  "version": "17.3.1",
   "description": "browser-side require() the node way",
   "main": "index.js",
   "bin": {
