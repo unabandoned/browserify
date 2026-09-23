@@ -1,6 +1,15 @@
 {
   "name": "@unabandoned/browserify",
   "version": "17.3.1",
+  "files": [
+    "CHANGELOG.md",
+    "assets",
+    "bin",
+    "changelog.markdown",
+    "index.js",
+    "lib",
+    "through.js"
+  ],
   "description": "browser-side require() the node way",
   "main": "index.js",
   "bin": {
