@@ -63,8 +63,8 @@
     "vm-browserify": "^1.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "21.2.2",
-    "@commitlint/config-conventional": "21.2.2",
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
     "browser-unpack": "npm:@unabandoned/browser-unpack@1.4.8",
     "defined": "1.0.1",
     "has-object-spread": "1.0.0",
