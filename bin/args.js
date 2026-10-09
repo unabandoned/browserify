@@ -5,7 +5,10 @@ var parseShell = require('shell-quote').parse;
 var insertGlobals = require('insert-module-globals');
 var Duplex = require('stream').Duplex;
 var subarg = require('../lib/vendor/subarg');
-var glob = require('glob').glob;
+var fsp = require('node:fs/promises');
+// fs.promises.glob replaces the glob package; it is stable (no
+// ExperimentalWarning) from Node 22.17.0, which engines requires.
+function glob (pattern) { return Array.fromAsync(fsp.glob(pattern)); }
 var Readable = require('readable-stream').Readable;
 // xtend replacement: shallow-merge sources into a fresh object (drops the xtend dep).
 function xtend () { return Object.assign.apply(null, [{}].concat([].slice.call(arguments))); }

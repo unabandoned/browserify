@@ -23,13 +23,12 @@ function concat(cb) {
     });
 }
 
-var inherits = require('inherits');
+var inherits = require('node:util').inherits;
 var EventEmitter = require('events').EventEmitter;
 // xtend replacement: shallow-merge sources into a fresh object (drops the xtend dep).
 function xtend () { return Object.assign.apply(null, [{}].concat([].slice.call(arguments))); }
 var isArray = Array.isArray;
 var defined = require('./lib/vendor/defined');
-var hasOwn = require('hasown');
 var sanitize = require('./lib/vendor/htmlescape').sanitize;
 var shasum = require('./lib/vendor/shasum-object');
 
@@ -567,7 +566,7 @@ Browserify.prototype._createDeps = function (opts) {
     else mopts.modules = xtend(builtins);
     
     Object.keys(builtins).forEach(function (key) {
-        if (!hasOwn(mopts.modules, key)) self._exclude.push(key);
+        if (!Object.hasOwn(mopts.modules, key)) self._exclude.push(key);
     });
     
     mopts.globalTransform = [];
