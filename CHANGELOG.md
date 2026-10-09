@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.3.2](https://github.com/unabandoned/browserify/compare/browserify-v17.3.1...browserify-v17.3.2) (2026-10-09)
+
+
+### Dependencies & maintenance
+
+* use Node built-ins instead of glob, hasown and inherits ([#89](https://github.com/unabandoned/browserify/issues/89)) ([c1ce6e3](https://github.com/unabandoned/browserify/commit/c1ce6e323e380c1c4a97dcba3e4807275504a7b4))
+
 ## [17.3.1](https://github.com/unabandoned/browserify/compare/browserify-v17.3.0...browserify-v17.3.1) (2026-09-23)
 
 
