@@ -1,9 +1,8 @@
 var browserify = require('../');
 var test = require('./tap-adapter').test;
 var vm = require('vm');
-var generatorFunction = require('make-generator-function');
 
-test('yield', { skip: !generatorFunction }, function (t) {
+test('yield', function (t) {
     t.plan(6);
     var b = browserify(__dirname + '/yield/main.js');
 
