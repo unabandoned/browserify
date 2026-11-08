@@ -34,6 +34,14 @@ upstream:
     - sha: 33ba29b8
       decision: declined
       note: "merge commit for the five above"
+    - sha: b66d60a6
+      decision: declined
+      note: >-
+        adds a badge for upstream's Discord to readme.markdown; promotional, and
+        it points readers at upstream's community rather than this fork's issues
+    - sha: cd60f059
+      decision: declined
+      note: "merge commit for b66d60a6 above"
 
 summary: >-
   Bundler that lets you require() Node-style modules in the browser by walking
